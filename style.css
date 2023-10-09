@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#todo-ul {
+
+    list-style: none;
+    width: 60%;
+    margin: auto;
+}
+
+.inputSect{
+
+    margin-bottom: 1rem;
+}
+
+
+ul li {
+    background-color: #eee;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+ul li:nth-child(even) {
+    background: #dde6f5;
+}
+
+ul li:hover {
+    transform: translate(3px, 2px);
+}
+
+li i {
+    padding: 1rem;
+    color: #ea0a0a;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+li i:hover {
+    color: maroon;
+}
+
+li p {
+    width: 100%;
+    padding: 0.4rem;
+}
+
+li.checked .fa-check {
+    color: #00e676;
+
+}
+
+li.checked p {
+    color: rgb(41, 41, 41);
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+/* .totalsSect {
+    background-color: rgba(100, 100, 100, 0.5);
+    position: fixed;
+    width: 40%;
+    right: 10rem;
+    top: 10rem;
+} */
